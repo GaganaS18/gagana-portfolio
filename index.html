@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Hire Gagana Sathya?</title>
+  <meta name="description" content="Why hire Gagana Sathya — Machine Learning Developer building production AI, automation, backend systems, and healthcare technology." />
+  <style>
+    :root{
+      --bg:#07111f;
+      --panel:#0d1b2a;
+      --panel2:#11253a;
+      --text:#f5f7fb;
+      --muted:#a9b7c8;
+      --accent:#5eead4;
+      --accent2:#60a5fa;
+      --line:rgba(255,255,255,.09);
+      --shadow:0 20px 60px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,.14), transparent 28%),
+        radial-gradient(circle at 20% 20%, rgba(94,234,212,.08), transparent 20%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    nav{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:blur(16px);
+      background:rgba(7,17,31,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-wrap{
+      display:flex;align-items:center;justify-content:space-between;
+      min-height:70px;
+    }
+    .brand{font-weight:800;letter-spacing:.2px}
+    .brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:20px;color:var(--muted);font-size:14px}
+    .nav-links a:hover{color:var(--text)}
+
+    .hero{
+      min-height:82vh;
+      display:grid;
+      align-items:center;
+      padding:80px 0 50px;
+    }
+    .eyebrow{
+      display:inline-flex;gap:10px;align-items:center;
+      color:var(--accent);
+      font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+      margin-bottom:18px;
+    }
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
+    h1{
+      margin:0 0 20px;
+      font-size:clamp(46px,8vw,92px);
+      line-height:.98;
+      letter-spacing:-.055em;
+      max-width:950px;
+    }
+    h1 .gradient{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+    }
+    .hero p{
+      max-width:780px;
+      font-size:clamp(18px,2vw,23px);
+      color:var(--muted);
+      margin:0 0 32px;
+    }
+    .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:13px 20px;border-radius:12px;
+      font-weight:700;font-size:15px;
+      border:1px solid var(--line);
+      transition:.2s ease;
+    }
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7dd3fc);color:#042018;border:none}
+    .btn-secondary{background:rgba(255,255,255,.03)}
+    .btn:hover{transform:translateY(-2px)}
+
+    section{padding:80px 0}
+    .section-label{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h2{font-size:clamp(32px,5vw,54px);line-height:1.05;letter-spacing:-.03em;margin:10px 0 18px}
+    .section-intro{color:var(--muted);max-width:760px;font-size:18px;margin-bottom:34px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .card h3{margin:0 0 10px;font-size:21px}
+    .card p{margin:0;color:var(--muted)}
+    .metric{
+      font-size:38px;
+      font-weight:900;
+      letter-spacing:-.04em;
+      color:var(--text);
+      margin-bottom:4px;
+    }
+    .metric small{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:0}
+
+    .projects{display:grid;gap:18px}
+    .project{
+      display:grid;grid-template-columns:1.1fr 1fr;gap:26px;
+      padding:28px;
+      border-radius:20px;
+      background:var(--panel);
+      border:1px solid var(--line);
+    }
+    .project-tag{
+      display:inline-block;
+      padding:5px 9px;border-radius:999px;
+      background:rgba(94,234,212,.1);
+      color:var(--accent);
+      font-size:12px;font-weight:700;margin-bottom:12px;
+    }
+    .project h3{font-size:28px;line-height:1.15;margin:0 0 10px}
+    .project p{color:var(--muted);margin:0}
+    .bullets{margin:0;padding-left:20px;color:#dce5ef}
+    .bullets li{margin:8px 0}
+
+    .stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+    .pill{
+      padding:9px 12px;border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.035);
+      color:#dce5ef;font-size:14px;
+    }
+
+    .why{
+      display:grid;grid-template-columns:1fr 1fr;gap:22px;
+    }
+    .statement{
+      font-size:clamp(26px,4vw,42px);
+      line-height:1.2;
+      font-weight:800;
+      letter-spacing:-.03em;
+    }
+    .statement span{color:var(--accent)}
+    .why-list{display:grid;gap:12px}
+    .why-item{
+      padding:18px 20px;border-left:3px solid var(--accent);
+      background:rgba(255,255,255,.03);
+      border-radius:0 12px 12px 0;
+    }
+    .why-item strong{display:block;margin-bottom:3px}
+    .why-item span{color:var(--muted)}
+
+    .final-cta{
+      text-align:center;
+      padding:70px 28px;
+      border-radius:24px;
+      background:linear-gradient(135deg,rgba(94,234,212,.10),rgba(96,165,250,.12));
+      border:1px solid var(--line);
+    }
+    .final-cta h2{max-width:760px;margin:0 auto 16px}
+    .final-cta p{color:var(--muted);max-width:650px;margin:0 auto 26px}
+
+    footer{padding:34px 0 50px;color:var(--muted);font-size:14px;text-align:center}
+
+    @media(max-width:850px){
+      .grid,.project,.why{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .hero{min-height:auto;padding-top:90px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">Gagana <span>Sathya</span></div>
+      <div class="nav-links">
+        <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#why">Why Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow"><span class="dot"></span> Machine Learning Developer • AI • Automation • Backend</div>
+        <h1>Why hire <span class="gradient">Gagana Sathya?</span></h1>
+        <p>
+          Because I don’t stop at prototypes. I build practical AI, machine learning, automation,
+          and backend systems that move real business workflows into production.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">See What I’ve Built</a>
+          <a class="btn btn-secondary" href="#why">Why I’m Different</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="container">
+        <div class="section-label">Impact</div>
+        <h2>I build systems people actually use.</h2>
+        <p class="section-intro">
+          My work sits at the intersection of machine learning, Python engineering, automation,
+          healthcare data, and operational problem-solving.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="metric">Production</div>
+            <h3>Not just experiments</h3>
+            <p>Built and deployed internal tools used in real healthcare operations.</p>
+          </div>
+          <div class="card">
+            <div class="metric">2 min</div>
+            <h3>Automation impact</h3>
+            <p>Reduced ERA posting workflows to roughly two minutes once the system is in place.</p>
+          </div>
+          <div class="card">
+            <div class="metric">18 yrs</div>
+            <h3>Recovered missing context</h3>
+            <p>Helped organize and surface compliance-related operational data that had not been centrally maintained for years.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">Selected Work</div>
+        <h2>Projects that show how I think.</h2>
+        <p class="section-intro">
+          I work across the full problem: data, logic, automation, backend integration, debugging,
+          production rollout, and business impact.
+        </p>
+
+        <div class="projects">
+          <article class="project">
+            <div>
+              <span class="project-tag">RPA + Healthcare Automation</span>
+              <h3>ERA Posting Automation</h3>
+              <p>
+                Automated a highly repetitive healthcare remittance workflow involving ERA review,
+                payment posting, denial handling, database checks, and application interaction.
+              </p>
+            </div>
+            <ul class="bullets">
+              <li>Integrated workflow automation with PostgreSQL-backed healthcare data.</li>
+              <li>Handled payment, denial, adjustment, and exception paths.</li>
+              <li>Designed for real production operations rather than a demo environment.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="project-tag">Python + EDI + Data Engineering</span>
+              <h3>835 / 837 Healthcare Parsers</h3>
+              <p>
+                Built parsers for healthcare EDI files to extract structured claim, payment,
+                adjustment, and service-line data for downstream analytics and automation.
+              </p>
+            </div>
+            <ul class="bullets">
+              <li>Mapped complex EDI structures into PostgreSQL tables.</li>
+              <li>Preserved operationally important fields and unmapped segments.</li>
+              <li>Used the extracted data as a foundation for denial and payment workflows.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="project-tag">ML + Denial Analytics</span>
+              <h3>Healthcare Denial Prediction</h3>
+              <p>
+                Worked with large-scale claims data to build a machine learning pipeline aimed at
+                identifying claims likely to be denied before submission.
+              </p>
+            </div>
+            <ul class="bullets">
+              <li>Worked with a dataset containing millions of rows.</li>
+              <li>Focused on features available before claim submission.</li>
+              <li>Connected machine learning objectives to a concrete business outcome: fewer denials.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="project-tag">Flask + PostgreSQL</span>
+              <h3>Internal Rulebook Platform</h3>
+              <p>
+                Built an internal Flask-based operational application for maintaining practice-specific
+                healthcare billing rules, metadata, audit history, and team reporting.
+              </p>
+            </div>
+            <ul class="bullets">
+              <li>Designed backend routes, database interactions, audit logging, and UI workflows.</li>
+              <li>Built for internal operational use across onshore and offshore teams.</li>
+              <li>Iterated directly from user feedback and production behavior.</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="project-tag">API + Validation Automation</span>
+              <h3>Medicare Revalidation Validator</h3>
+              <p>
+                Developed a Python workflow using CMS public data to validate provider Medicare
+                enrollment and revalidation status against internal practice/provider records.
+              </p>
+            </div>
+            <ul class="bullets">
+              <li>Integrated external CMS data with internal PostgreSQL records.</li>
+              <li>Created a reusable status table for operational follow-up.</li>
+              <li>Designed for recurring refreshes as source data changes.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">Technical Toolkit</div>
+        <h2>Comfortable across the stack.</h2>
+        <p class="section-intro">
+          I’m strongest where machine learning meets engineering and automation.
+        </p>
+
+        <div class="stack">
+          <span class="pill">Python</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">Deep Learning</span>
+          <span class="pill">Flask</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">SQL</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Power Automate Desktop</span>
+          <span class="pill">RPA</span>
+          <span class="pill">Healthcare EDI 835/837</span>
+          <span class="pill">Data Engineering</span>
+          <span class="pill">Backend Development</span>
+          <span class="pill">Automation Testing</span>
+          <span class="pill">Production Debugging</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container why">
+        <div class="statement">
+          I’m not trying to be someone who only knows <span>AI theory.</span><br><br>
+          I want to be the engineer who can take an unclear business problem and turn it into a
+          <span>working production system.</span>
+        </div>
+
+        <div class="why-list">
+          <div class="why-item">
+            <strong>I learn by building.</strong>
+            <span>I move quickly from concept to implementation and improve the system through real use.</span>
+          </div>
+          <div class="why-item">
+            <strong>I understand messy real-world data.</strong>
+            <span>Healthcare workflows rarely arrive clean or standardized, and I’m comfortable working through that complexity.</span>
+          </div>
+          <div class="why-item">
+            <strong>I connect engineering to business outcomes.</strong>
+            <span>I care about whether the solution saves time, reduces manual work, improves accuracy, or creates better decisions.</span>
+          </div>
+          <div class="why-item">
+            <strong>I can work across boundaries.</strong>
+            <span>ML, backend development, databases, automation, APIs, debugging, and user workflows are all part of how I approach a problem.</span>
+          </div>
+          <div class="why-item">
+            <strong>I ship.</strong>
+            <span>Several of my tools are already in production, while others are actively progressing through testing and rollout.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta">
+          <div class="section-label">Let’s Build Something Useful</div>
+          <h2>Looking for an AI/ML engineer who can turn ideas into working systems?</h2>
+          <p>
+            I’m exploring Machine Learning Engineer, AI Engineer, Applied AI, Python/backend,
+            and automation-focused engineering opportunities in the United States.
+          </p>
+          <div class="cta-row" style="justify-content:center;">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/gaganasathya" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-secondary" href="mailto:spoorthigaganas@gmail.com">Email Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Gagana Sathya • Machine Learning Developer</div>
+  </footer>
+</body>
+</html>
